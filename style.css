@@ -1,0 +1,856 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ .topheader{
+    padding-top: 25px;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color:#5624d0;
+    text-align:center ;
+   font-size: 1rem;
+    color: white;
+}
+ .mainheader .logo a img{
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+ .mainheader .logo span{
+margin-left: 20px;
+}
+ .mainheader .logo span:hover{
+    color: #5624d0;
+}
+ .mainheader{
+ display:flex ;
+    height: 80px;
+
+}
+ .mainheader  span{
+    background-color: #ffff;
+    cursor: pointer;
+    border: none;
+    font-size: smaller;
+    margin: 30px 0px 0px 10px;
+}
+ .mainheader span:hover{
+    color: #5624d0;
+}
+ .input{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10014px;
+    width: 550px;
+    height: 50px;
+}
+ .input .maininput input{
+    border: none;
+    justify-content: center;
+    width: 90%;
+    height: 85%;
+    font-size: 1.02rem;
+   margin-top: 3px;
+}
+ .input .maininput input:focus{
+    outline: none;
+}
+ .input .icon{
+    width: 5%;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+ .input .icon i{
+    cursor: not-allowed;
+    color: rgb(138, 110, 110);
+}
+ .business{
+    width:300px;
+}
+ .business ul{
+    display: flex;
+    margin-top: 30px;
+}
+ .business ul li a{
+    text-decoration: none;
+    color: black;
+}
+.business ul li a button{
+    border: none;
+    cursor: pointer;
+    background-color: #ffff;
+}
+ .business ul li a:last-child{
+    padding-left: 20px;
+}
+ .business ul li a button:hover{
+    color: #5624d0;
+}
+ .business ul li{
+    list-style: none;
+}
+ .personalinfo{
+    width: 350px;
+    display: flex;
+margin-top: 20px;
+}
+ .personalinfo .btn{
+    margin-left: 20px;
+    width: 400px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.personalinfo .btn a{
+    text-decoration: none;
+}
+ .personalinfo .btn-login{
+    margin-left: 20px;
+    background-color: #ffff;
+}
+.personalinfo .btn-login a{
+    color: black;
+}
+.personalinfo .btn-login:hover{
+    background-color: rgb(230, 225, 225);
+}
+ .personalinfo .btn-signup{
+    background-color: black;
+}
+.personalinfo .btn-signup a{
+    color: #ffff;
+}
+ .personalinfo .btn-global{
+    width: 100px;
+    font-size: larger;
+    background-color: #ffff;
+    margin-right: 15px;
+}
+.personalinfo .btn-global:hover{
+    background-color: rgb(230, 225, 225);
+}
+ .btn-cart{
+    margin-top: 25px;
+    border: none;
+    background-color: #ffff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn-cart:hover{
+    color:#5624d0 ;
+}
+main .banner .image img{
+    margin: 2px;
+    width: 100%;
+    box-shadow:  0px -2px 5px ;
+    color: #aca6a6;
+}
+main.banner{
+    position: relative;
+}
+main .banner .box{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    z-index: 2;
+    background-color: #ffff;
+    padding: 24px;
+}
+
+main h1{
+    font-weight: bold;
+line-height: 1.8rem;
+font-size: 32px;
+}
+main .middle p{
+    margin-left: 15px;
+    font-size: larger;
+}
+.middle{
+    padding: 0px 30px 30px 30px;
+    width: 100%;
+    height: 100%;
+}
+main .middle ul{
+    display: flex;
+}
+main .middle ul li{
+    margin-left: 30px;
+}
+main .middle ul li:hover{
+    cursor: pointer;
+    font-weight: bolder;
+} 
+main .product{
+    padding: 0px 20px 20px 20px;
+    margin: 0px 20px 30px 20px;
+    border: 1px solid rgb(187, 183, 183);
+    height: 600px;
+}
+main .product p{
+    margin-right: 300px;
+}
+main .product button{
+    padding: 15px;
+    border: 1px solid black;
+    background-color: #ffff;
+}
+main .product button:hover{
+    cursor: pointer;
+    background-color: rgb(230, 225, 225) ;
+}
+main .product button a{
+    text-decoration: none;
+    color: black;
+}
+.product .productdetails{
+    display: flex;
+    padding: 0px 20px 0px 0px;
+}
+.product .productdetails .learnpython1{
+    width: 20%;
+    height: 100px;
+}
+.product .productdetails .learnpython1 h3{
+    margin: 0px;
+    font-size: medium;
+}
+.product .productdetails .learnpython1 img{
+    margin-top: 30px;
+}
+.product .productdetails .learnpython1 .teachersname span{
+    font-size: small;
+    color:rgb(145, 142, 142) ;
+}
+.product .productdetails .learnpython1 .stars .checked {
+    color: orange;
+}
+.product .productdetails .learnpython1 a{
+    text-decoration: none;
+    color: black;
+}  
+.product .productdetails .learnpython1 a:hover img{
+filter: brightness(50%);
+transition-duration: 2s;
+
+}
+.product .productdetails .learnpython2{
+    margin-left: 5px;
+    width: 20%;
+    height: 100px;
+}
+.product .productdetails .learnpython2 h3{
+    margin: 0px;
+    font-size: medium;
+}
+.product .productdetails .learnpython2 img{
+    margin-top: 30px;
+    border: 1px solid rgb(223, 219, 219);
+}
+.product .productdetails .learnpython2 .teachersname span{
+    font-size: small;
+    color:rgb(145, 142, 142) ;
+}
+.product .productdetails .learnpython2 .stars .checked {
+    color: orange;
+}
+.product .productdetails .learnpython2 a{
+    text-decoration: none;
+    color: black;
+}  
+.product .productdetails .learnpython2 a:hover img{
+filter: brightness(50%);
+transition-duration: 2s;
+
+}
+.product .productdetails .learnpython2 .bestseller{
+    width: 70px;
+    height: 20px;
+    background-color: #eceb98;
+    color: #3d3c0a;
+}
+
+.product .productdetails .learnpython2 a .bestseller p{
+    font-size: small;
+}
+/* mikham Best seller biad vasat nemidunam chejuri miad. */
+.product .productdetails{
+    display: flex;
+}
+.product .productdetails .learnpython3{
+    width: 20%;
+    height: 100px;
+    margin-left: 10px;
+}
+.product .productdetails .learnpython3 h3{
+    margin: 0px;
+    font-size: medium;
+}
+.product .productdetails .learnpython3 img{
+    margin-top: 30px;
+}
+.product .productdetails .learnpython3 .teachersname span{
+    font-size: small;
+    color:rgb(145, 142, 142) ;
+}
+.product .productdetails .learnpython3 .stars .checked {
+    color: orange;
+}
+.product .productdetails .learnpython3 a{
+    text-decoration: none;
+    color: black;
+}  
+.product .productdetails .learnpython3 a:hover img{
+    filter: brightness(50%);
+    transition-duration: 2s;
+}
+.product .productdetails .learnpython4{
+    width: 20%;
+    height: 100px;
+    margin-left: 10px;
+}
+.product .productdetails .learnpython4 h3{
+    margin: 0px;
+    font-size: medium;
+}
+.product .productdetails .learnpython4 img{
+    margin-top: 30px;
+}
+.product .productdetails .learnpython4 .teachersname span{
+    font-size: small;
+    color:rgb(145, 142, 142) ;
+}
+.product .productdetails .learnpython4 .stars .checked {
+    color: orange;
+}
+.product .productdetails .learnpython4 a{
+    text-decoration: none;
+    color: black;
+}  
+.product .productdetails .learnpython4 a:hover img{
+    filter: brightness(50%);
+    transition-duration: 2s;
+}
+
+.product .productdetails .learnpython5{
+    width: 20%;
+    height: 100px;
+    margin-left: 10px;
+}
+.product .productdetails .learnpython5 h3{
+    margin: 0px;
+    font-size: medium;
+}
+.product .productdetails .learnpython5 img{
+    margin-top: 30px;
+}
+.product .productdetails .learnpython5 .teachersname span{
+    font-size: small;
+    color:rgb(145, 142, 142) ;
+}
+.product .productdetails .learnpython5 .stars .checked {
+    color: orange;
+}
+.product .productdetails .learnpython5 a{
+    text-decoration: none;
+    color: black;
+}  
+.product .productdetails .learnpython5 a:hover img{
+    filter: brightness(50%);
+    transition-duration: 2s;
+}
+.teachersinfo{
+    padding: 30px;
+    background-color: rgba(230, 225, 225, 0.356)
+}
+.teachersinfo .teachers{
+    display: flex;
+    padding: 0px 30px 30px 30px; 
+
+}
+.teachersinfo .teacher1{
+    line-height: 25px;
+    padding: 60px 15px 0px 15px;
+    width: 400px;
+    height: 300px;
+    border: 1px solid rgb(211, 208, 208);
+    background-color: #ffff;
+}
+.teachersinfo .teacher1 span{
+    font-weight: bold;
+}
+.teachersinfo .teacher1 .name p{
+    font-weight: 600;
+}
+.teachersinfo .teacher1 .strong p{
+    font-weight: bolder;
+    line-height: 2px;
+}
+.teachersinfo .teacher1 .name p{
+padding: 0px 0px 15px 30px;
+}
+.teachersinfo .teacher1 hr{
+    color: rgba(177, 172, 172, 0.397);
+    width: 90%;
+}
+
+.teachersinfo .teacher1 .iconteacher1 a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #5624d0;
+}
+.teachersinfo .teacher1 .iconteacher1 a:hover{
+    color: rgb(33, 14, 51);
+    font-weight: bolder;
+    transition-duration: 60ms;
+}
+.teachersinfo .teacher1 .iconteacher1 i{
+    color: #5624d0;
+    font-size: larger;
+}
+.teachersinfo .teacher1 .iconteacher1 i:hover{
+    color:rgb(33, 14, 51) ;
+}
+/* mikham vaghti hover mishe ham icon rangesh farq kone ham linke ham zaman. ama nashod */
+.teachersinfo .teacher2{
+    margin-left: 15px;
+    line-height: 25px;
+    padding: 60px 15px 0px 15px;
+    width: 400px;
+    height: 300px;
+    border: 1px solid rgb(211, 208, 208);
+    background-color: #ffff;
+}
+.teachersinfo .teacher2 span{
+    font-weight: bold;
+}
+.teachersinfo .teacher2 .name{
+    margin-top: 50px;
+}
+.teachersinfo .teacher2 .name p{
+    font-weight: 600;
+}
+.teachersinfo .teacher2 .name p{
+padding: 0px 0px 15px 30px;
+}
+.teachersinfo .teacher2 hr{
+    color: rgba(177, 172, 172, 0.397);
+    width: 90%;
+}
+
+.teachersinfo .teacher2 .iconteacher2 a{
+    padding-top: 15px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #5624d0;
+}
+.teachersinfo .teacher2 .iconteacher2 a:hover{
+    color: rgb(33, 14, 51);
+    font-weight: bolder;
+    transition-duration: 60ms;
+}
+.teachersinfo .teacher2 .iconteacher2 i{
+    color: #5624d0;
+    font-size: larger;
+}
+.teachersinfo .teacher2 .iconteacher2 i:hover{
+    color:rgb(33, 14, 51) ;
+}
+.teachersinfo .teacher3{
+    margin-left: 15px;
+    line-height: 25px;
+    padding: 60px 15px 0px 15px;
+     width: 400px;
+    height: 300px;
+    border: 1px solid rgb(211, 208, 208);
+    background-color: #ffff;
+}
+.teachersinfo .teacher3 span{
+    font-weight: bold;
+}
+.teachersinfo .teacher3 .name p{
+    font-weight: 600;
+}
+.teachersinfo .teacher3 .name p{
+padding: 0px 0px 15px 30px;
+}
+.teachersinfo .teacher3 hr{
+    color: rgba(177, 172, 172, 0.397);
+    width: 90%;
+}
+.teachersinfo .teacher3 .iconteacher3 a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #5624d0;
+}
+.teachersinfo .teacher3 .iconteacher3 a:hover{
+    color: rgb(33, 14, 51);
+    font-weight: bolder;
+    transition-duration: 60ms;
+}
+.teachersinfo .teacher3 .iconteacher3 i{
+    color: #5624d0;
+    font-size: larger;
+}
+.teachersinfo .teacher3 .iconteacher3 i:hover{
+    color:rgb(33, 14, 51) ;
+}
+.students{
+    height: 400px;
+    margin: 0px 20px 0px 20px;
+    padding: 0px 32px 0px 30px;
+}
+.students .studentsinfo{
+    height: 200px;
+
+    display: flex;
+}
+.students .student1{
+    height: 100px;
+    width: 20%;
+}
+.students .student1 img{
+    width: 100%;
+}
+.students .student1 h3{
+    font-size: medium;
+    font-weight: bold;
+margin: 0px;
+}
+.students .student1 a{
+    text-decoration: none;
+    color: black;
+}
+.students .student1 span{
+    font-size: small;
+
+    color: #aca6a6;
+}
+.students .student1 .stars .checked{
+    color: orange;
+}
+.students .student1 .bestseller{
+    margin-bottom: 20px;
+    font-size: small;
+    width: 70px;
+    height: 20px;
+    background-color: #eceb98;
+    color: #3d3c0a;
+}
+.students .student1 a:hover img{
+    filter: brightness(50%);
+    transition-duration: 2s;
+    
+}
+.students .student2{
+    height: 100px;
+    padding-left: 15px;
+     width: 20%;
+ }
+.students .student2 img{
+        width: 100%;
+}
+.students .student2 h3{
+    font-weight: bold;
+  font-size: medium;
+    margin: 0px;
+ }
+.students .student2 a{
+     text-decoration: none;
+ color: black;
+}
+.students .student2 span{
+    font-size: small;
+
+        color: #aca6a6;
+}
+.students .student2 .stars .checked{
+        color: orange;
+}
+.students .student2 .bestseller{
+        font-size: small;
+        width: 70px;
+        height: 20px;
+        background-color: #eceb98;
+        color: #3d3c0a;
+}
+.students .student2 a:hover img{
+        filter: brightness(50%);
+        transition-duration: 2s;
+        
+}
+.students .student3{
+    padding-left: 15px;
+    width: 20%;
+    height: 100px;
+}
+.students .student3 img{
+       width: 100%;
+}
+.students .student3 h3{
+    font-weight: bold;
+ font-size: medium;
+   margin: 0px;
+}
+.students .student3 a{
+    text-decoration: none;
+color: black;
+}
+.students .student3 span{
+       color: #aca6a6;
+       font-size: small;
+
+}
+.students .student3 .stars .checked{
+       color: orange;
+}
+.students .student3 .bestseller{
+       font-size: small;
+       width: 70px;
+       height: 20px;
+       background-color: #eceb98;
+       color: #3d3c0a;
+}
+.students .student3 a:hover img{
+       filter: brightness(50%);
+       transition-duration: 2s;
+       
+}
+.students .student4{
+    padding-left: 15px;
+    width: 20%;
+    height: 500px;
+}
+.students .student4 img{
+       width: 100%;
+}
+.students .student4 h3{
+    font-weight: bold;
+ font-size: medium;
+   margin: 0px;
+}
+.students .student4 a{
+    text-decoration: none;
+color: black;
+}
+.students .student4 span{
+       color: #aca6a6;
+       font-size: small;
+}
+.students .student4 .stars .checked{
+       color: orange;
+}
+.students .student4 .bestseller{
+       font-size: small;
+       width: 70px;
+       height: 20px;
+       background-color: #eceb98;
+       color: #3d3c0a;
+}
+.students .student4 a:hover img{
+       filter: brightness(50%);
+       transition-duration: 2s;
+       
+}
+.students .student5{
+    height: 400px;
+    padding-left: 15px;
+    width: 20%;
+}
+.students .student5 img{
+     width: 100%;
+}
+.students .student5 h3{
+  font-weight: bold;
+  font-size: medium;
+   margin: 0px;
+}
+.students .student5 a{
+    text-decoration: none;
+color: black;
+}
+.students .student5 span{
+    color: #aca6a6;
+    font-size: small;
+}
+.students .student5 .stars .checked{
+    color: orange;
+}
+.students .student5 .bestseller{
+    font-size: small;
+    width: 70px;
+    height: 20px;
+    background-color: #eceb98;
+    color: #3d3c0a;
+}
+.students .student5 a:hover img{
+    filter: brightness(50%);
+    transition-duration: 2s;
+       
+}
+main .upperfooter{
+    width: 100%;
+    height: 400px;
+    margin: 50px 300px 0px 200px;
+}
+main .upperfooter img{
+    width: 200px;
+    height: 50px;
+}
+main .upperfooter h3{
+    margin: 0px 800px 10px 0px;
+}
+main .upperfooter ul {
+    margin-left:20px ;
+}
+main .upperfooter ul li{
+    list-style: circle;
+}
+main .upperfooter .btn{
+    display: flex;
+}
+main .upperfooter .btn button{
+    padding: 10px;
+    cursor: pointer;
+}
+main .upperfooter .btn .learnmore button{
+    margin-left: 15px;
+    background-color: #ffff;
+    border: 2px solid black;
+}
+main .upperfooter .btn .learnmore button:hover{
+    background-color: rgb(230, 225, 225);
+}
+main .upperfooter .btn .learnmore button span{
+    font-weight: bold;
+}
+main .upperfooter .btn .getudemy button{
+    background-color: rgba(5, 5, 5, 0.897);
+}
+main .upperfooter .btn .getudemy button span{
+    color: #ffff;
+    font-weight: bold;
+}
+main .upperfooter .btn .getudemy button:hover{
+    background-color: black;
+}
+main .instructor{
+    margin: 0px 200px 200px 600px;
+}
+main .instructor button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(5, 5, 5, 0.897);
+}
+main .instructor button span{
+    color: #ffff;
+    font-weight: bold;
+}
+main .instructor button:hover{
+    background-color: black;
+
+}
+footer{
+    width: 100%;
+    height:300px ;
+    background-color: rgb(46, 46, 46);
+}
+footer .footer{
+    display: flex;
+    padding: 50px 0px 0px 50px;
+}
+footer .footer .footer2{
+    margin-left: 100px;
+}
+footer ul li a{
+    text-decoration: none;
+    font-size: small;
+    color: #ffff;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+footer .footer .footer3{
+    margin-left: 100px;
+}
+footer .footerimg{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+footer .footerimg img{
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
+}
+footer .footer .empty{
+    width: 500px;
+}
+footer .footer .btn button{
+    font-size: medium;
+    padding: 10px 30px;
+    border: 1px solid #ffff;
+    background-color: rgb(46, 46, 46);
+}
+footer .footer .btn button span{
+    color: #ffff;
+}
+footer .footer .btn button i{
+    color: #ffff;
+}
+footer .footer .btn button:hover{
+    background-color: #464444;
+    cursor: pointer;
+}
